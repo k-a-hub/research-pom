@@ -10,7 +10,7 @@ from page.base_page import BasePage
 class LocalSearchPage(BasePage):
 
     def __init__(self, driver):
-        url = f'file:///{os.getcwd()}/index.html'
+        url = f'file:///{os.getcwd()}/html/index.html'
         super().__init__(driver, url)
 
     def search(self, keyword):

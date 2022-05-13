@@ -9,18 +9,18 @@ from page.local_search_page import LocalSearchPage
 from page.result_page import ResultPage
 from page.signin_page import SigninPage
 
-# chrome_service = service.Service(executable_path='./chromedriver')
-# driver = webdriver.Chrome(service=chrome_service)
+chrome_service = service.Service(executable_path='./chromedriver')
+driver = webdriver.Chrome(service=chrome_service)
 
-# # search_page = LocalSearchPage(driver)
-# # search_page.open()
-# # search_page.search('ブラウザ自動化ツール')
+search_page = LocalSearchPage(driver)
+search_page.open()
+search_page.search('ブラウザ自動化ツール')
 
-# # result_page = ResultPage(search_page.driver)
-# # print(result_page.get_result_stats())
+result_page = ResultPage(search_page.driver)
+print(result_page.get_result_stats())
 
-# # sleep(2)
-# # result_page.close()
+sleep(2)
+result_page.close()
 
 # ----------------------------------------------
 
